@@ -1,0 +1,157 @@
+@import url(/src/assets/blob.css);
+
+/* Remove watermark of FullPageJs */
+.fp-watermark {
+  display: none;
+}
+
+#left-container {
+  width: calc(100% - 50px);
+}
+
+#right-container {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50px;
+}
+
+.glass {
+  background: rgba(23, 23, 23, 0.713);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(98, 98, 98, 0.48);
+}
+
+.navigation-glass {
+  background: rgba(63, 63, 63, 0.33);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(98, 98, 98, 0.48);
+}
+
+li,
+.active a svg path {
+  fill: #dc2626 !important;
+}
+
+ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5px;
+  border-radius: 50px;
+  height: 94%;
+  display: block;
+  opacity: 0.7;
+  background-color: #c5c5c583;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+ul .line {
+  height: 50px;
+  width: 3px;
+  background-color: #dc2626;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+ul li:nth-child(1).active ~ .line {
+  transform: translateY(0);
+}
+
+ul li:nth-child(2).active ~ .line {
+  transform: translateY(50px);
+}
+
+ul li:nth-child(3).active ~ .line {
+  transform: translateY(100px);
+}
+
+ul li:nth-child(4).active ~ .line {
+  transform: translateY(150px);
+}
+
+ul li:nth-child(5).active ~ .line {
+  transform: translateY(200px);
+}
+
+.nav-button {
+  height: 50px !important;
+  width: 100%;
+}
+
+#logo-right-container {
+  width: 50px;
+}
+
+#logo-right-container h2 {
+  font-family: estedad;
+}
+
+.animated-left {
+  left: 0;
+  transform: translate3d(-100vw, 0, 0);
+  transition: transform 600ms ease;
+  right: 0;
+}
+
+.animated-top {
+  left: 0;
+  transform: translate3d(0, -100vw, 0);
+  transition: transform 600ms ease;
+  right: 0;
+}
+
+.fp-section.active .animated {
+  transform: translate3d(0, 0, 0);
+}
+
+.home-hero {
+  position: absolute;
+  left: -550px;
+  bottom: -450px;
+  opacity: 0.4;
+  transform: rotate(180deg);
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+}
+
+.side-dots {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: -60%;
+  opacity: 0.6;
+  transform: rotate(90deg);
+  scale: 0.8;
+}
+
+.decor-home-shape {
+  position: absolute;
+  bottom: -130px;
+  z-index: 2;
+  top: 150px;
+  right: 50px;
+  margin: 0 auto;
+  max-width: 200px;
+  opacity: 0.5;
+}
+
+.section {
+  height: 100vh;
+}

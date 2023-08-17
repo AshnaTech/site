@@ -1,0 +1,54 @@
+@import './mainPage.css';
+@import './desk.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import vazirmatn font facr */
+@font-face {
+  font-family: vazirmatn;
+  src: url(fonts/vazirmatn/Vazirmatn-FD-Regular.woff2);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: vazirmatn;
+  src: url(fonts/vazirmatn/Vazirmatn-FD-Medium.woff2);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: vazirmatn;
+  src: url(fonts/vazirmatn/Vazirmatn-FD-Bold.woff2);
+  font-weight: bold;
+}
+
+/* Import estedad font facr */
+@font-face {
+  font-family: estedad;
+  src: url(fonts/estedad/Estedad-Regular.woff2);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: estedad;
+  src: url(fonts/estedad/Estedad-Medium.woff2);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: estedad;
+  src: url(fonts/estedad/Estedad-Bold.woff2);
+  font-weight: bold;
+}
+
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: vazirmatn;
+  background-color: #55b;
+}
+.dir-rtl {
+direction: rtl;
+}
