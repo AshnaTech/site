@@ -1,0 +1,16 @@
+import "/site/src/assets/main.css?t=1692418453197"
+
+import { createApp } from "/site/node_modules/.vite/deps/vue.js?v=77de183e"
+import { createPinia } from "/site/node_modules/.vite/deps/pinia.js?v=77de183e"
+
+import App from "/site/src/App.vue"
+import router from "/site/src/router/index.js"
+import VueFullPage from "/site/node_modules/.vite/deps/vue-fullpage__js.js?v=77de183e"
+
+const app = createApp(App)
+
+app.use(createPinia())
+app.use(router)
+app.use(VueFullPage)
+
+app.mount('#ashna')

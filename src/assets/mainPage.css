@@ -1,5 +1,7 @@
 @import url(/src/assets/blob.css);
-
+@import url(/src/assets/button.css);
+@import url(/src/assets/laptop.css);
+@import url(/src/assets/skills-diagram.css);
 /* Remove watermark of FullPageJs */
 .fp-watermark {
   display: none;
@@ -110,7 +112,7 @@ ul li:nth-child(5).active ~ .line {
 
 .animated-top {
   left: 0;
-  transform: translate3d(0, -100vw, 0);
+  transform: translate3d(0, -1000vw, 0);
   transition: transform 600ms ease;
   right: 0;
 }
@@ -131,7 +133,7 @@ ul li:nth-child(5).active ~ .line {
 
 .side-dots {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -144,14 +146,48 @@ ul li:nth-child(5).active ~ .line {
 .decor-home-shape {
   position: absolute;
   bottom: -130px;
-  z-index: 2;
+  z-index: -1;
   top: 150px;
-  right: 50px;
+  right: 10px;
   margin: 0 auto;
   max-width: 200px;
   opacity: 0.5;
 }
 
+.decor-about-shape {
+  position: absolute;
+  top: 165vh;
+  z-index: -1;
+  left: 5rem;
+  margin: 0 auto;
+  max-width: 200px;
+  opacity: 0.5;
+}
+
+.decor-about-shape__2 {
+  position: absolute;
+  top: 110vh;
+  z-index: -1;
+  right: 5rem;
+  margin: 0 auto;
+  max-width: 200px;
+  opacity: 1;
+}
+
+.about-hero {
+  position: absolute;
+  right: -700px;
+  top: 150vh;
+  opacity: 0.4;
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+}
+
 .section {
   height: 100vh;
+}
+
+.skill {
+  display: inline-flex !important;
+  flex-direction: column;
 }

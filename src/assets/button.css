@@ -1,0 +1,14 @@
+.learn-more:hover  #learn-more-svg {
+    transition: transform .3s ease-out;
+    transform: rotate(-90deg);
+}
+
+#learn-more-text{
+z-index: 100000;
+}
+
+#learn-more-svg {
+    transition: transform .3s ease-out;
+    transform: rotate(0);
+}
+
