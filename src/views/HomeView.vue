@@ -30,9 +30,9 @@ const fullPageOptions = {
 </script>
 
 <template>
-  <!-- <div class="absolute w-screen z-10">
+   <div class="absolute w-screen z-10">
     <div class="blob"></div>
-  </div> -->
+  </div>
   <div id="main-container" class="rounded-lg flex overflow-hidden glass z-20">
     <div id="left-container" class="h-full">
       <div id="app">
