@@ -1,0 +1,14 @@
+.fancy-text {
+  background: -webkit-linear-gradient(-86deg, #8e0e00 5%, orangered 53%, red 91%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  color: #232d2d;
+}
+
+.fancy-text__2 {
+    background: -webkit-linear-gradient(-86deg, #232d2d 5%, black 53%, #282323 91%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    color: #8e0e00;
+  }
+  

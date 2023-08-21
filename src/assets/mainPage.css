@@ -2,6 +2,8 @@
 @import url(/src/assets/button.css);
 @import url(/src/assets/laptop.css);
 @import url(/src/assets/skills-diagram.css);
+@import url(/src/assets/fancyText.css);
+@import url(/src/assets/according.css);
 /* Remove watermark of FullPageJs */
 .fp-watermark {
   display: none;
@@ -304,24 +306,96 @@ ul li:nth-child(5).active ~ .line {
 
 @-webkit-keyframes blink-anime {
   0% {
-    color: rgba(255, 0, 0, 1);
   }
   50% {
     color: rgba(255, 0, 0, 0.02);
   }
   100% {
-    color: rgba(255, 0, 0, 1);
   }
 }
 
 @keyframes blink-anime {
   0% {
-    color: rgba(255, 0, 0, 1);
   }
   50% {
     color: rgba(255, 0, 0, 0.02);
   }
   100% {
-    color: rgba(255, 0, 0, 1);
   }
 }
+
+.bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(77, 77, 77);
+}
+
+.bg h1 {
+  font-size: 19rem;
+  filter: opacity(0.3);
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .fancy {
+    color: orangered;
+    background-image: url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='RED' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='ORANGERED'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='RED'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='ORANGERED'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: 100% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .fancy span {
+    color: #131313;
+  }
+}
+
+.bg-contact {
+  background: #8e0e00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #1f1c1818,
+    #8e0e00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #1f1c1818,
+    #8e0e00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-right: 1px;
+  border-style: solid;
+  border-color: rgba(98, 98, 98, 0.48);
+}
+
+.text-input {
+  border-top-color: #f4ebeb;
+}
+
+input {
+  font-family: vazirmatn !important;
+}
+
+textarea {
+  overflow: hidden;
+  font-family: vazirmatn !important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.accordion-content {
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  }

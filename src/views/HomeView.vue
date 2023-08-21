@@ -30,8 +30,8 @@ const fullPageOptions = {
 </script>
 
 <template>
-   <div class="absolute w-screen z-10">
-    <div class="blob"></div>
+  <div class="bg">
+    <h1 class="fancy"><span class="blinkit">Ashna</span>Tech</h1>
   </div>
   <div id="main-container" class="rounded-lg flex overflow-hidden glass z-20">
     <div id="left-container" class="h-full">
@@ -41,7 +41,7 @@ const fullPageOptions = {
             <div class="flex dir-rtl justify-between px-36 -mt-10 h-screen">
               <div id="home-right" class="w-1/3 h-100 flex align-center items-center text-center text-gray-200">
                 <div class="h-100 flex flex-col text-right text-justify gap-3 animated animated-top">
-                  <h1 class="text-4xl animated animated-top">گروه برنامه نویسی <span class="text-red-500">آشنا</span></h1>
+                  <h1 class="text-4xl animated animated-top">گروه برنامه نویسی <span class="text-red-600">آشنا</span></h1>
                   <h3 class="animated animated-top">طراحی و توسعه سایت شخصی، فروشگاهی و استارتاپی با جدیدترین ابزارهای
                     دنیا
                     و به صورت حرفه ای، طراحی لوگو
@@ -458,7 +458,8 @@ const fullPageOptions = {
 
           <div class="section" data-fp-styles="null" data-anchor="projects">
             <swiper :slidesPerView="1" :spaceBetween="30" :keyboard="{ enabled: true, }"
-              :pagination="{ clickable: true, }" :navigation="true" :modules="modules" class="mySwiper animated animated-left">
+              :pagination="{ clickable: true, }" :navigation="true" :modules="modules"
+              class="mySwiper animated animated-left">
               <swiper-slide class="gap-20">
                 <div class="w-1/3">
                   <swiper :effect="'cards'" :grabCursor="true" :modules="modules2" class="mySwiper z-20">
@@ -526,8 +527,108 @@ const fullPageOptions = {
 
           </div>
 
-          <div class="section" data-fp-styles="null" data-anchor="contact">
-            <h1>Contact</h1>
+          <div class="section flex" data-fp-styles="null" data-anchor="contact">
+            <div class="w-1/2 bg-contact flex flex-col justify-center aling-center items-center gap-20">
+              <div class="px-20">
+                <h2 class="fancy-text__2 text-4xl mb-4 text-center">سوالات متداول</h2>
+                <div class="accordion-wrapper w-full">
+                  <div class="accordion">
+                    <input class="accordion-item" type="radio" name="radio-a" id="check1" checked>
+                    <label class="accordion-label text-md" for="check1">زمینه اصلی فعالیت ما چیه ؟</label>
+                    <div class="accordion-content dir-rtl text-gray-300 text-sm">
+                      <p>زمینه اصلی فعالیت ما توی حوزه برنامه نویسی و توسعه سایت هست &#128522;</p>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <input class="accordion-item" type="radio" name="radio-a" id="check2">
+                    <label class="accordion-label text-md" for="check2">تعرفه خدمات چجوریه ؟</label>
+                    <div class="accordion-content dir-rtl text-gray-300 text-sm">
+                      <p>
+                        تعرفه خدماتی که ارائه می دیم بستگی به نوع خدمت داره، برای اطلاعات بیشتر بهتره با ما تماس بگیرید.
+                        <br>
+                        <br>
+                        اما این رو با اطمینان میگیم که گروه ما بهترین خدمات رو با کمترین هزینه به شما ارائه میده
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <input class="accordion-item" type="radio" name="radio-a" id="check3">
+                    <label class="accordion-label text-md" for="check3">بهترین راه برای توسعه کسب و کارم چیه ؟</label>
+                    <div class="accordion-content dir-rtl text-gray-300 text-sm">
+                      <p>
+                        یکی از مهم ترین سوالاتی که باید بهش پاسخ بدید، اینه که توی شغل شما با چه افرادی در ارتباط هستید، پاسخ به همین سوال ساده می تونه به شما کمک کنه که بهترین راه های تبلیغات رو با بیشترین بازدهی انتخاب کنید.
+                        <br>
+                        <br>
+                        اگه توی این راه راهنمایی لازم داشتید، میتونید با ما تماس بگیرید و ما شما رو به صورت رایگان راهنمایی میکنیم
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2 class="fancy-text__2 text-4xl mb-4 text-center">راه های ارتباطی</h2>
+                <div class="flex">
+                  <div class="flex justify-center align-center items-center dir-rtl glass p-3 rounded-l-md">
+                    <h3 class="text-red-800 text-xl">09380354358</h3>
+                  </div>
+
+                  <div class="flex justify-center align-center items-center dir-rtl glass p-3 rounded-x-md">
+                    <h3 class="text-red-800 text-xl">مشهد، هاشمیه 31</h3>
+                  </div>
+
+                  <div class="flex justify-center align-center items-center dir-rtl glass p-3 rounded-r-md">
+                    <h3 class="text-red-800 text-xl">mosfazli@gmail.com</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-1/2 flex flex-col justify-center aling-center items-center">
+              <h2 class="fancy-text text-4xl mb-12">با ما در تماس باشید</h2>
+              <form action="" class="flex flex-col gap-5 w-4/6">
+                <div class="relative h-10 w-full dir-rtl">
+                  <input
+                    class="peer h-full w-full rounded-[7px] border border-blue-gray-200 bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-gray-300 border-t-transparent focus:border-2 focus:border-red-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-input"
+                    placeholder=" " />
+                  <label
+                    class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:ml-2 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tr-md before:border-t before:border-r before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:mr-2 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tl-md after:border-t after:border-l after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-red-500 peer-focus:before:border-t-2 peer-focus:before:border-r-2 peer-focus:before:border-red-500 peer-focus:after:border-t-2 peer-focus:after:border-l-2 peer-focus:after:border-red-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                    نام و نام خانوادگی
+                  </label>
+                </div>
+                <div class="relative h-10 w-full dir-rtl">
+                  <input type="number"
+                    class="peer text-left h-full w-full rounded-[7px] border border-blue-gray-200 bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-gray-300 border-t-transparent focus:border-2 focus:border-red-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-input"
+                    placeholder=" " />
+                  <label
+                    class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:ml-2 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tr-md before:border-t before:border-r before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:mr-2 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tl-md after:border-t after:border-l after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-red-500 peer-focus:before:border-t-2 peer-focus:before:border-r-2 peer-focus:before:border-red-500 peer-focus:after:border-t-2 peer-focus:after:border-l-2 peer-focus:after:border-red-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                    شماره تلفن
+                  </label>
+                </div>
+                <div class="relative h-10 w-full dir-rtl">
+                  <input type="email"
+                    class="peer text-left h-full w-full rounded-[7px] border border-blue-gray-200 bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-gray-300 border-t-transparent focus:border-2 focus:border-red-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-input"
+                    placeholder=" " />
+                  <label
+                    class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:ml-2 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tr-md before:border-t before:border-r before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:mr-2 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tl-md after:border-t after:border-l after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-red-500 peer-focus:before:border-t-2 peer-focus:before:border-r-2 peer-focus:before:border-red-500 peer-focus:after:border-t-2 peer-focus:after:border-l-2 peer-focus:after:border-red-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                    آدرس ایمیل
+                  </label>
+                </div>
+                <div class="relative w-full h-32 dir-rtl">
+                  <textarea
+                    class="peer text-right h-full w-full rounded-[7px] border border-blue-gray-200 bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-gray-300 border-t-transparent focus:border-2 focus:border-red-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 text-input"
+                    placeholder=" " />
+                  <label
+                    class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:ml-2 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tr-md before:border-t before:border-r before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:mr-2 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tl-md after:border-t after:border-l after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-red-500 peer-focus:before:border-t-2 peer-focus:before:border-r-2 peer-focus:before:border-red-500 peer-focus:after:border-t-2 peer-focus:after:border-l-2 peer-focus:after:border-red-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                    پیام
+                  </label>
+                </div>
+                <button type="button"
+                  class="inline-block rounded bg-red-700 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_3px_5px_red] transition duration-150 ease-in-out hover:text-gray-50 hover:bg-red-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+                  ارسال
+                </button>
+              </form>
+
+            </div>
           </div>
         </full-page>
       </div>
